@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/util/slick.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/util/slick-theme.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/util/bootstrap.min.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/util/font-awesome.min.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+  <title>topto</title>
+</head>
+
+<body>
+  
+  <!-- header begin -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="../img/logo.png" alt="">
+          <!-- <div class="header__advert header__advert-middle">
+            <a href="" class="badge">Добавить объявление</a>
+          </div> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/registration">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/loginquest">Вход</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/registration">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__advert header__advert-usually">
+          <a href="/addanouns" class="badge">Добавить объявление</a>
+          <a href="" class="badge">Познакомиться</a>
+        </div>
+      </nav>
+      <div class="header-content">
+        <div class="header-title">
+          <h1>StrP объявление</h1>
+          <p>Легко купить, легко продать</p>
+        </div>
+        <form class="header-finds">
+          <div class="header-finds__search">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" placeholder="PHP программист..." class="form-control search">
+                <button type="submit" class="form-control submit"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="header-finds__selects">
+            <div class="row">
+              <div class="col-md-4">
+                <select class="select" name="language">
+                  <option disabled value="0">Выбрать...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select class="select" name="language">
+                  <option disabled value="0">Выбрать...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select class="select" name="language">
+                  <option disabled value="0">Выбрать...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="header-icons">
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+          <a href="#" class="header-icons__box">
+            <div class="icon">
+              <img src="../img/icon-1.png">
+            </div>
+            <div class="title">Продажа</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- header end -->
+
+  <!-- premium-announcements begin -->
+  <section class="premium-announcements">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="section-title lines">Премиум объявления</h1>
+        </div>
+        <div class="col-md-12">
+          <div id="premium-announcements-slider">
+            <div class="announcements-block">
+              <a href="#" class="announcements-block__inner">
+                <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+                <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+                <div class="announcements-block__text">
+                  <div class="announcements-block__title">Таунхаус</div>
+                  <div class="announcements-block__price">3540000.00 Руб</div>
+                </div>
+              </a>
+            </div>
+            <div class="announcements-block">
+              <a href="#" class="announcements-block__inner">
+                <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+                <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+                <div class="announcements-block__text">
+                  <div class="announcements-block__title">Таунхаус</div>
+                  <div class="announcements-block__price">3540000.00 Руб</div>
+                </div>
+              </a>
+            </div>
+            <div class="announcements-block">
+              <a href="#" class="announcements-block__inner">
+                <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+                <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+                <div class="announcements-block__text">
+                  <div class="announcements-block__title">Таунхаус</div>
+                  <div class="announcements-block__price">3540000.00 Руб</div>
+                </div>
+              </a>
+            </div>
+            <div class="announcements-block">
+              <a href="#" class="announcements-block__inner">
+                <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+                <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+                <div class="announcements-block__text">
+                  <div class="announcements-block__title">Таунхаус</div>
+                  <div class="announcements-block__price">3540000.00 Руб</div>
+                </div>
+              </a>
+            </div>
+            <div class="announcements-block">
+              <a href="#" class="announcements-block__inner">
+                <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+                <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+                <div class="announcements-block__text">
+                  <div class="announcements-block__title">Таунхаус</div>
+                  <div class="announcements-block__price">3540000.00 Руб</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- premium-announcements end -->
+
+ <!-- header end -->
+
+
+
+  <!-- categories begin -->
+  <section class="categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="section-title lines">КАТЕГОРИИ</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="categories-box">
+            <div class="categories-box__header">
+              <div class="categories-box__header__icon"><a href="#"><i class="fa fa-home"></i></a></div>
+              <div class="categories-box__header__title"><a href="#">ПРОДАЖА</a></div>
+            </div>
+            <div class="categories-box__content">
+              <div class="categories-box__content__list">
+                <a href="#">Животные <span>6</span></a>
+                <a href="#">Искусство - Коллекция... <span>2</span></a>
+                <a href="#">Обмен <span>0</span></a>
+                <a href="#">Книги - Журналы <span>1</span></a>
+                <a href="#">Камеры - Аксессуары... <span>0</span></a>
+              </div>
+              <a href="#" class="btn-square">Показать все</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- categories end -->
+
+  <!-- last-announcements begin -->
+  <section class="last-announcements">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="section-title">ПОСЛЕДНИЕ ОБЪЯВЛЕНИЯ</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="announcements-block">
+            <a href="#" class="announcements-block__inner">
+              <div class="announcements-block__img" style="background-image: url(../img/1.jpg);"></div>
+              <div class="announcements-block__icon"><i class="fa fa-home"></i></div>
+              <div class="announcements-block__text">
+                <div class="announcements-block__title">Mercedes-Benz</div>
+                <div class="announcements-block__price">2500000.00 Руб</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <a href="#" class="btn-square-blue"><i class="fa fa-share"></i> Посмотреть все объявления</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- last-announcements end -->
+
+  <!-- footer begin -->
+  <div class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="footer-top__logo">
+              <img src="../img/logo.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-9">
+            <div class="footer-top__info">
+              <div class="footer-top__block">
+                <i class="fa fa-map-marker"></i>
+                Ваш адрес
+              </div>
+              <div class="footer-top__block">
+                <i class="fa fa-phone"></i>
+                +1-555-5555-55
+              </div>
+              <div class="footer-top__block">
+                <a href="#">
+                  <i class="fa fa-envelope"></i>
+                  @yourdomain.com
+                </a>
+              </div>
+              <div class="footer-top__block">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="footer-bottom__info">
+              <div class="footer-bottom__info__left">
+                <a href="#">Контакты</a>
+              </div>
+              <div class="footer-bottom__info__right">
+                ©2020. Ваш копирайт. Название компании
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer end -->
+
+
+  <script language="javascript" type="text/javascript" th:src="@{/js/util/jquery-3.3.1.js}"></script>
+  <script language="javascript" type="text/javascript" th:src="@{/js/util/slick.min.js}"></script>
+  <script language="javascript" type="text/javascript" th:src="@{/js/util/bootstrap.min.js}"></script>
+  <script language="javascript" type="text/javascript" th:src="@{/js/main.js}"></script>
+</body>
+
+</html>

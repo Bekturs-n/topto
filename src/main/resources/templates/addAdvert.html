@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/util/slick.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/util/slick-theme.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/util/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/util/font-awesome.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <title>topto</title>
+</head>
+
+<body>
+
+<!-- menu begin -->
+<nav class="navbar navbar-expand-lg navbar-light menu-second">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="../img/logo.png" alt="">
+            <!-- <div class="header__advert header__advert-middle">
+              <a href="" class="badge">Добавить объявление</a>
+            </div> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/loginquest">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/registration">Регистрация</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__advert header__advert-usually">
+            <a href="" class="badge">Добавить объявление</a>
+            <a href="" class="badge badge-danger">Познакомиться</a>
+        </div>
+    </div>
+</nav>
+<!-- menu end -->
+
+<!-- form registration begin -->
+<div class="form-block">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <h2 class="title-bottom-line">
+                    Опубликовать объявление
+                </h2>
+                <form class="form-itself add-advert" id="example">
+                    <div class="form-group add-advert__select-box">
+                        <div class="add-advert__select" id="formBlockSelectLeft">
+                            <label>Категория</label>
+                            <select class="form-control" id="category">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group add-advert__select-box">
+                        <div class="add-advert__select" id="formBlockSelectRight">
+                            <label>Подкатекгория</label>
+                            <select class="form-control" id="subcategory">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Заголовок</label>
+                        <input type="text" class="form-control" id="title">
+                        <small class="text-muted">Не больше 100 символов</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Описание</label>
+                        <textarea class="form-control" rows="10" id="description"></textarea>
+                        <small class="text-muted">Не больше 5000 символов</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Цена</label>
+                        <input type="text" class="form-control">
+                        <small class="text-muted">Не больше 100 символов</small>
+                    </div>
+                    <!--                    <div class="form-group">-->
+                    <!--                        <label>Заголовок</label>-->
+                    <!--                        <input type="text" class="form-control">-->
+                    <!--                        <small class="text-muted">Не больше 100 символов</small>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="form-group">-->
+                    <!--                        <label>Заголовок</label>-->
+                    <!--                        <input type="text" class="form-control">-->
+                    <!--                        <small class="text-muted">Не больше 100 символов</small>-->
+                    <!--                    </div>-->
+                    <div class="form-group custom-file">
+                        <input type="file" class="custom-file-input" id="addAdvertFile">
+                        <label class="custom-file-label" for="addAdvertFile">Нажмите и выберите изображение</label>
+                        <small class="text-muted">Ограничение по размеру 100 МБ</small>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn badge" id="submit1">Опубликовать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- form registration end -->
+
+<!-- footer begin -->
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="footer-top__logo">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-9">
+                    <div class="footer-top__info">
+                        <div class="footer-top__block">
+                            <i class="fa fa-map-marker"></i>
+                            Ваш адрес
+                        </div>
+                        <div class="footer-top__block">
+                            <i class="fa fa-phone"></i>
+                            +1-555-5555-55
+                        </div>
+                        <div class="footer-top__block">
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                @yourdomain.com
+                            </a>
+                        </div>
+                        <div class="footer-top__block">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="footer-bottom__info">
+                        <div class="footer-bottom__info__left">
+                            <a href="#">Контакты</a>
+                        </div>
+                        <div class="footer-bottom__info__right">
+                            ©2020. Ваш копирайт. Название компании
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer end -->
+
+
+<script language="javascript" type="text/javascript" th:src="@{/js/util/jquery-3.3.1.js}"></script>
+<script language="javascript" type="text/javascript" th:src="@{/js/util/slick.min.js}"></script>
+<script language="javascript" type="text/javascript" th:src="@{/js/util/bootstrap.min.js}"></script>
+<script language="javascript" type="text/javascript" th:src="@{/js/service/categoryService.js}"></script>
+<script language="javascript" type="text/javascript" th:src="@{/js/init/addAdvert.js}"></script>
+<script language="javascript" type="text/javascript" th:src="@{/js/main.js}"></script>
+</body>
+
+</html>
