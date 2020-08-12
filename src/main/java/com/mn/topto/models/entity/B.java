@@ -19,5 +19,6 @@ public class B implements C{
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "parants_id")
     private A a;
 }

@@ -1,11 +1,11 @@
 package com.mn.topto.models.entity;
 
 import lombok.*;
+import org.springframework.context.annotation.Bean;
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.List;
-import java.util.Map;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table
@@ -16,6 +16,8 @@ import java.util.Map;
 @ToString
 //@Builder
 public class Embd1 extends Embedded {
+
+
     @Column
     private String embd1;
 
@@ -34,4 +36,5 @@ public class Embd1 extends Embedded {
         super(name);
         this.embd1 = embd1;
     }
+
 }

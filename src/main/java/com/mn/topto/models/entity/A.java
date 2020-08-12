@@ -19,6 +19,6 @@ public class A implements C{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "a", cascade = CascadeType.ALL, orphanRemoval = false)
+    @OneToMany(mappedBy = "a", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<B> b;
 }

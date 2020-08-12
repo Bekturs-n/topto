@@ -5,12 +5,14 @@ import com.mn.topto.service.abstracts.model.AnounsmentService;
 import com.mn.topto.service.abstracts.model.CategoryService;
 import com.mn.topto.service.abstracts.model.UserService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/anouns")
@@ -29,6 +31,12 @@ public class AnounsResourceController {
         this.anounsmentService = anounsmentService;
         this.categoryService = categoryService;
         this.userService = userService;
+    }
+
+    @Bean({"b1"})
+    public List<String> myBean(){
+        System.out.println("dssdf");
+        return null;
     }
 
     @PostMapping

@@ -1,7 +1,6 @@
 package com.mn.topto.service.impl;
 
 import com.mn.topto.models.entity.*;
-import com.mn.topto.models.util.Enum1;
 import com.mn.topto.service.abstracts.model.AnounsmentService;
 import com.mn.topto.service.abstracts.model.CategoryService;
 import com.mn.topto.service.abstracts.model.TestService;
@@ -12,9 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 @Service
@@ -57,9 +54,13 @@ public class TestDataEntity {
         b2.setA(a);
 
         testService.persist(a);
+        B bb = a.getB().get(1);
+        bb.setA(null);
+
+//        testService.deleteByKeyCascadeEnable(1L);
 //        testService.persist(b);
-        B b3 = a.getB().get(0);
-        a.getB().remove(b3);
+//        B b3 = a.getB().get(0);
+//        a.getB().remove(b3);
 //        testService.update(a);
 //        testService.delete(a);
 //        try {
